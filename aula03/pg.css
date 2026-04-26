@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.pagination a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  color: #ccc;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.pagination a:hover {
+  background: #333;
+}
+
+.pagination a.active {
+  background: #f5a623;
+  color: #000;
+}
+.btn-home {
+  position: fixed;
+  top: 32px;
+  left: 32px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(83, 83, 83);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  z-index: 9999;
+  animation-name: animacaoloBTN;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.btn-home:hover {
+  background: #444;
+}
+@keyframes animacaoloBTN{
+    0% {box-shadow: 10px 0px 40px 1px #ff0000;}
+    25% {box-shadow: 0px 10px 40px 1px #fbff00;}
+    50% {box-shadow: -10px 0px 40px 1px #00ff55;}
+    75% {box-shadow: 0px -10px 40px 1px #0026ff;}
+    100% {box-shadow: 10px 0px 40px 1px #f700ff;}
+}

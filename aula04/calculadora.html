@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="calculadora.css" />
+</head>
+<body>
+  <a href="../index.html" class="btn-home">↩</a>
+  <div class="calc-container">
+    <div class="calc">
+      <p class="calc-tititulo">Calculadora</p>
+
+      <div class="input-valores">
+        <input type="number" id="num1" placeholder="0" step="any" />
+        <span class="sep" id="op-symbol">·</span>
+        <input type="number" id="num2" placeholder="0" step="any" />
+      </div>
+
+      <div class="operador">
+        <button class="op-btn" data-op="+" data-sym="+">+</button>
+        <button class="op-btn" data-op="-" data-sym="−">−</button>
+        <button class="op-btn" data-op="*" data-sym="×">×</button>
+        <button class="op-btn" data-op="/" data-sym="÷">÷</button>
+      </div>
+
+      <button class="calc-btn" id="btn-calcular">Calcular →</button>
+
+      <div class="resultado-area">
+        <p class="resultado-label">Resultado</p>
+        <p class="resultado-expr" id="expr"></p>
+        <p class="resultado-val" id="result">—</p>
+      </div>
+
+      <button class="reset-btn" id="btn-reset">limpar</button>
+    </div>
+  </div>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>
