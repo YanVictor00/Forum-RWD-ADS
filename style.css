@@ -133,7 +133,7 @@ h1::after {
   position: absolute;
   width: 48px;
   height: 48px;
-  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/011/720/953/small/simple-hand-cursor-free-png.png');
+  background-image: url(./png/hand.webp);
   background-size: contain;
   background-repeat: no-repeat;
   bottom: -28px;
